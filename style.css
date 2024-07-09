@@ -1,0 +1,122 @@
+:root{
+    --background-color: #568ADC;
+    --box-color: #ffffff;
+    --shadow-color: #3333331b;
+    --font-color: #5689dc8f;
+}
+
+*{
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos gerais */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    
+
+}
+
+/* Contêiner principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-block-start: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-block-end: 15px;
+    background-color: var(--box-color);
+    box-shadow: 100px var(--shadow-color);
+    border-radius: 8px;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+    color: var(--font-color);
+}
+
+#password_container {
+    padding: 8px 18px;
+    width: 400px;
+    max-width: 360px;
+    display: flex;
+    background-color: var(--shadow-color);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+#passwordSpan{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#copy{
+    background-color: transparent;
+    border: none;
+    color: var(--background-color);
+    height: 20px;
+    font-size: medium;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+#copy:hover{
+    color: var(--font-color)
+}
+
+#password_items{
+
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+#item{
+    
+    display: flex;
+    gap: 5px;
+}
+
+#size {
+    width: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--shadow-color);
+}
+
+#size::-webkit-inner-spin-button,
+#size::-webkit-outer-spin-button {
+    opacity: 0.5;
+}
+
+#size:focus{
+    outline: 1px solid var(--background-color);
+}
+
+#generate {
+    
+    border: none;
+    border-radius: 4px;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--box-color);
+    cursor: pointer;
+    transition: color .10s;
+    font-weight: 700;
+}
+
+#generate:hover{
+    font-weight: 700;
+    color: var(--font-color) ;
+    background-color: var(--shadow-color);
+} 
